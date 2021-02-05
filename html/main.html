@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+<body onload="display_slide();">
+  <div class="language">
+         <button onclick="english();"><img src="../images/uk.png">English</button>
+         <button onclick="nepali();"><img src="../images/nepal.png">नेपाली </button>
+    </div>
+      <br>
+      <div class="menu">
+      <li><a href="#" id="hom">Home</a></li>
+      <div class="about">
+      <li><a href="#" id="abou">About Us:</a></li>
+      <div class="drop1">
+      <li><a href="team.html" id="team">Our Team</a></li>
+      <hr>
+      <li><a href="mission.html" id="mission">Our Mission</a></li>
+    </div>
+         </div>
+         <div class="services">
+        <li><a href="#" id="poul">Our Services:</a></li>
+        <div class="drop2">
+          <li><a href="poultry.html" id="pol1">Poultry Farm</a></li>
+          <hr>
+          <li><a href="veg.html" id="veg1">Vegetable Farm</a></li>
+          <hr>
+          <li><a href="goat.html" id="goat1">Goat Farm</a></li>
+          <hr>
+          <li><a href="buffalo.html" id="buff1">Buffalo Farm</a></li>
+        </div>
+      </div>
+        <li><a href="veg.html" id="con">Contact Us</a></li>
+        <li><a href="gallery.html" id="gall">Gallery</a></li>
+    </div>
+    <br>
+    <br>
+    <div class="slider-container">
+            <div class="slider">
+                <img src="../images/1st_slide.jpg">
+                <p><b id="pol2">Poultry Farm</b><br><a href="poultry.html" id="pol">Learn about Poultry Farm</a></p>
+                <div class="next" onclick="next_slide();"> > </div>
+                <div class="pre" onclick="pre_slide();"> < </div>
+            </div>
+            <div class="slider">
+                <img src="../images/2nd_slide.jpg">
+                <p><b id="veg2">Vegetable Farm</b><br><a href="veg.html" id="veg">Learn about Vegetable Farm</a></p>
+                <div class="next" onclick="next_slide();"> > </div>
+                <div class="pre" onclick="pre_slide();"> < </div>
+            </div>
+            <div class="slider">
+                <img src="../images/goat.jpg">
+                <p><b id="goat2">Goat Farm</b><br><a href="goat.html" id="goat">Learn about Goat Farm</a></p>
+                <div class="next" onclick="next_slide();"> > </div>
+                <div class="pre" onclick="pre_slide();"> < </div>
+            </div>
+            <div class="slider">
+                <img src="../images/buffalo.jpg">
+                <p><b id="buff2">Buffalo Farm</b><br><a href="buffalo.html" id="buff">Learn about Buffalo Farm</a></p>
+                <div class="next" onclick="next_slide();"> > </div>
+                <div class="pre" onclick="pre_slide();"> < </div>
+            </div>
+        </div>
+        <img src="../images/logo.png" class="logo">
+        <table border="3" cellspacing="0" id="nav">
+          <tr><td><b id="blgs">Blogs:</b></td></tr>
+          <tr><td><a href="#" class="link1">link1kkkkkkkkkkkkk</a></td></tr>
+          <tr><td><a href="#" class="link2">link2lkkkkkkkkkkkkk</a></td></tr>
+          <tr><td><a href="#" class="link3">link3kkkkkkkkkkkkkkkk</a></td></tr>
+          <tr><td><a href="#" class="link4">link4kkkkkkkkkkkkkkkkkkkkk</a></td></tr>
+        </table>
+    <script type="text/javascript">
+      function english(){
+       document.getElementById('hom').innerHTML="Home"; 
+       document.getElementById('abou').innerHTML="About Us:"; 
+       document.getElementById('poul').innerHTML="Our Services:"; 
+       document.getElementById('con').innerHTML="Contact Us"; 
+       document.getElementById('gall').innerHTML="Gallery";
+       document.getElementById('pol').innerHTML="Learn about Poultry Farm";
+       document.getElementById('veg').innerHTML="Learn about Vegetable Farm";
+       document.getElementById('goat').innerHTML="Learn about Goat Farm";
+       document.getElementById('buff').innerHTML="Learn about Buffalo Farm";
+       document.getElementById('pol1').innerHTML="Poultry Farm";
+       document.getElementById('pol2').innerHTML="Poultry Farm";
+       document.getElementById('veg2').innerHTML="Vegetable Farm";
+       document.getElementById('veg1').innerHTML="Vegetable Farm";
+       document.getElementById('goat1').innerHTML="Goat Farm";
+       document.getElementById('goat2').innerHTML="Goat Farm";
+       document.getElementById('buff1').innerHTML="Buffalo Farm";
+       document.getElementById('buff2').innerHTML="Buffalo Farm";
+       document.getElementById('team').innerHTML='Our Team';
+       document.getElementById('mission').innerHTML='Our Mission';
+       document.getElementById('blgs').innerHTML='Blogs';
+
+      }
+      function nepali() {
+       document.getElementById('hom').innerHTML="गृहपृष्ठ"; 
+       document.getElementById('abou').innerHTML="हाम्रो बारेमा:"; 
+       document.getElementById('poul').innerHTML="हाम्रा सेवाहरुः"; 
+       document.getElementById('con').innerHTML="सम्पर्क गर्नुहोस";
+       document.getElementById('gall').innerHTML="तस्बिरहरु";
+       document.getElementById('pol').innerHTML="पोल्ट्री फर्म को बारेमा जान्नुहोस:";
+       document.getElementById('veg').innerHTML="तरकारी खेति को बारेमा जान्नुहोस:";
+       document.getElementById('goat').innerHTML="बाख्रापालन को बारेमा जान्नुहोस:";
+       document.getElementById('buff').innerHTML="भैसिपालन को बारेमा जान्नुहोस:";
+       document.getElementById('pol1').innerHTML="पोल्ट्री फर्म";
+       document.getElementById('pol2').innerHTML="पोल्ट्री फर्म";
+       document.getElementById('veg1').innerHTML="तरकारी खेति";
+       document.getElementById('veg2').innerHTML="तरकारी खेति";
+       document.getElementById('goat1').innerHTML="बाख्रापालन";
+       document.getElementById('goat2').innerHTML="बाख्रापालन";
+       document.getElementById('buff1').innerHTML="भैसिपालन";
+       document.getElementById('buff2').innerHTML="भैसिपालन";
+       document.getElementById('team').innerHTML="हाम्रो टिम";
+       document.getElementById('mission').innerHTML='हाम्रो लक्ष्य ';
+       document.getElementById('blgs').innerHTML='लेखहरुः';
+
+      }
+    </script>
+    <script type="text/javascript">
+            var slider_index=0;
+            var sliders=document.getElementsByClassName('slider');
+            function next_slide(){
+                slider_index++;
+                if(slider_index>=sliders.length){
+                    slider_index=0;
+                }
+                display_slide();
+            }
+            function pre_slide(){
+                slider_index--;
+                if(slider_index<0){
+                    slider_index=sliders.length-1;
+                }
+                display_slide();
+            }
+            function display_slide(){
+                for(var i=0;i<sliders.length;i++){
+                    sliders[i].style.display="none";
+                }
+               sliders[slider_index].style.display="block";
+               setTimeout(next_slide,5000);
+            }
+       </script>
+</body>
+</html>

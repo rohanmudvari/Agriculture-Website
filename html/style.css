@@ -1,0 +1,103 @@
+.language{
+	position: absolute;
+	right:10%;
+	top:5%;
+}
+.language>button:hover{
+  cursor: pointer;
+}
+.language>button>img{
+	height:20px;
+	width: 20px;
+}
+a{
+	text-decoration: none;
+}
+.menu>li>a:hover{
+	background-color:#0b9926;
+}
+.about>li>a:hover{
+	background-color:#0b9926;
+}
+.services>li>a:hover{
+	background-color:#0b9926;
+}
+.menu>li,.about>li,.services>li{
+	float: left;
+}
+.menu>li>a,.about>li>a,.services>li>a{
+	padding:30px;
+	color: white;
+	background-color: #076319;
+}
+.menu{
+	list-style: none;
+	padding: 10px 20px;
+	}
+.slider-container>.slider>p>a{
+	color: #81b1db;
+	text-decoration:underline;
+}
+a{
+	color:white;
+}
+
+#nav{
+	position: absolute;
+	display: block;
+	top: 20%;
+	right:5%;
+	background-color:#076319;
+	color:white;
+}
+td{
+	padding: 20px;
+}
+ .logo{
+	height: 200px;
+    width: 300px;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 5%;
+}
+
+.drop1,.drop2{
+	display: none;
+	z-index: 1;
+	min-height: 10px;
+}
+
+.about:hover .drop1{
+  display: block;
+ 
+}
+.services:hover .drop2{
+  display: block;
+
+}
+
+.drop1{
+ position: absolute;
+ padding: 22px;
+    	left: 9.5%;
+     	top:12%;
+     	background-color:#076319;
+}
+
+.drop2{
+	position: absolute;
+	padding: 23px;
+    	left: 18.67%;
+     	top:12%;
+background-color:#076319;
+}
+.drop1>li:hover,.drop2>li:hover{
+   color:white;
+   text-decoration:underline;
+}
+
+.link1:hover,.link2:hover,.link3:hover,.link4:hover{
+  text-decoration:underline;
+}
+
